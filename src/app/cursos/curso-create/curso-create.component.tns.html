@@ -1,0 +1,36 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <ActionBar title="Title">
+        <!-- <ActionItem text="left item" ios.position="left"></ActionItem>
+        <ActionItem text="Item" ios.position="right" android.position="popup"></ActionItem>
+
+        <ActionItem ios.systemIcon="12" android.systemIcon="ic_menu_search"></ActionItem>
+        <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()"></NavigationButton> -->
+    </ActionBar>
+    <FlexboxLayout flexDirection="column" class="container-page">
+        <StackLayout class="form">
+            <StackLayout class="input-field">
+                <TextField hint="Enter text" 
+                    autocorrect="false" 
+                    borderRadius="50"  
+                    class="input input-border">
+                </TextField>
+            </StackLayout>
+            <StackLayout class="input-field">
+                <TextField #secondTx 
+                    hint="Enter some text and click the button" 
+                    autocorrect="false" 
+                    borderRadius="50"
+                    class="input input-border">
+                </TextField>
+            </StackLayout>
+            <StackLayout class="input-field">
+                <Button 
+                    text="Get the second input" 
+                    (tap)="showAlert(secondTx.text)" 
+                    class="btn btn-primary btn-active"
+                    borderRadius="50">
+                </Button>       
+            </StackLayout>
+       </StackLayout>  
+    </FlexboxLayout>
+ 

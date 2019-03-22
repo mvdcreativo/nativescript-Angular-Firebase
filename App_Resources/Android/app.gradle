@@ -8,8 +8,8 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "__PACKAGE__" 
-    
+    applicationId = "nativescript.firebase" 
+    multiDexEnabled true
     //override supported platforms
     // ndk {
     //       abiFilters.clear()

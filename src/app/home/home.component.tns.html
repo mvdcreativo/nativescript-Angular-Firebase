@@ -2,4 +2,7 @@
 <ActionBar [title]="title"></ActionBar>
 <StackLayout  class="p-20">
     <Label text="Welcome to {{ title }}!" class="h1 text-center" textWrap="true"></Label>
+    <Button text="Button" [nsRouterLink]="['/auth/login']" pageTransition="slideBottom" ></Button>
+    <Button text="Cursos" [nsRouterLink]="['/cursos/create']" pageTransition="slideBottom" ></Button>
+
 </StackLayout>
